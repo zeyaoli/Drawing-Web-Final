@@ -5,76 +5,41 @@
 <head>
   <meta charset="utf-8">
   <title>TALIA</title>
-  <style>
-    .bg {
-      position: relative;
-    }
-
-    #bed {
-      position: fixed;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: -100;
-    }
-
-    #light {
-      position: absolute;
-      width: 30%;
-      height: 30%;
-      left: 35%;
-      right: auto;
-      top: 35%;
-      mix-blend-mode: color-dodge;
-      z-index: -80;
-    }
-
-    #flower {
-      position: absolute;
-      width: 30%;
-      height: 30%;
-      left: 35%;
-      right: auto;
-      top: 35%;
-      mix-blend-mode: color-dodge;
-      z-index: -50;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <main>
 
-    <div class="bg">
-      <video id="bed" autoplay loop muted>
-        <source src="media/bed.mp4" type="video/mp4">
-      </video>
+    <div id="bg-one">
     </div>
 
-    <div class="front">
-      <video id="light" autoplay loop muted>
-        <source src="media/light.mp4" type="video/mp4">
-      </video>
-      <video id="flower" autoplay="false" loop muted>
-        <source src="media/flower.mp4" type="video/mp4">
-      </video>
+    <div class="first-scene">
+      <div id="flower"></div>
+      <div id="flowerTwo"></div>
+      <div id="mud"></div>
+      <div id="mud-two"></div>
     </div>
+
+    <div class="second-scene">
+      <div id="stand-one"></div>
+      <div id="stand-two"></div>
+      <div id="floor"></div>
+      <div id="stand-three"></div>
+    </div>
+
+    <div id="chorus">
+      <canvas id="walk" width="640" height="360"></canvas>
+    </div>
+
+
     <audio autoplay loop>
-      <source src="media/talia.mp3"></source>
+      <source src="media/talia_edited.mp3"></source>
     </audio>
   </main>
 
-  <script>
-    var video = document.getElementById("flower");
-
-    function playVideo() {
-      video.play();
-      setTimeout(playVideo, 5000);
-    }
-
-    playVideo();
-  </script>
+  <script type="text/javascript" src="sketch.js"></script>
+  <script type="text/javascript" src="chorus.js"></script>
 </body>
 
 </html>

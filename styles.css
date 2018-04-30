@@ -1,0 +1,197 @@
+#bg-one {
+  position: fixed;
+  top: 0;
+  left: 0;
+  filter: blur(8px);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+}
+
+/*
+.first-scene {
+  position: relative;
+} */
+
+/* the first scene goes here */
+
+#flower {
+  position: absolute;
+  border-radius: 100px;
+  border-width: 0.5px;
+  border-style: hidden;
+  right: auto;
+  filter: saturate(200%) brightness(105%) blur(0.5px);
+  top: 40%;
+  left: 25%;
+  mix-blend-mode: hard-light;
+  z-index: -50;
+  animation-name: flowers;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 13s;
+  overflow: hidden;
+}
+
+@keyframes flowers {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  30% {
+    transform: translate(0px, -280px);
+  }
+  60% {
+    transform: translate(-300px, -280px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+#mud {
+  position: absolute;
+  border-radius: 100px;
+  border-width: 0.5px;
+  border-style: hidden;
+  right: auto;
+  filter: saturate(200%) blur(0.5px);
+  top: 40%;
+  left: 25%;
+  mix-blend-mode: difference;
+  z-index: -30;
+  animation-name: mud;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 13s;
+  overflow: hidden;
+}
+
+@keyframes mud {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  30% {
+    transform: translate(0px, -280px);
+  }
+  60% {
+    transform: translate(-300px, -280px);
+  }
+  100% {
+    transform: translate(-300px, 200px);
+  }
+}
+
+#mud-two {
+  position: absolute;
+  border-radius: 100px;
+  border-width: 0.5px;
+  border-style: hidden;
+  right: auto;
+  filter: saturate(200%) blur(0.5px);
+  top: 40%;
+  right: 25%;
+  mix-blend-mode: overlay;
+  z-index: -30;
+  animation-name: mud-right;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 13s;
+  overflow: hidden;
+}
+
+@keyframes mud-right {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  30% {
+    transform: translate(0px, 280px);
+  }
+  60% {
+    transform: translate(300px, 280px);
+  }
+  100% {
+    transform: translate(300px, -200px);
+  }
+}
+
+#flowerTwo {
+  position: absolute;
+  top: 40%;
+  right: 25%;
+  mix-blend-mode: color-dodge;
+  border-radius: 100px;
+  border-width: 0.5px;
+  border-style: hidden;
+  overflow: hidden;
+  animation-name: flower-right;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-delay: 13s;
+}
+
+@keyframes flower-right {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  30% {
+    transform: translate(0px, 280px);
+  }
+  60% {
+    transform: translate(300px, 280px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* the second scene here */
+
+#stand-one {
+  position: absolute;
+  top: 27%;
+  left: 30%;
+  mix-blend-mode: exclusion;
+  overflow: hidden;
+  z-index: -90;
+}
+
+#stand-two {
+  position: absolute;
+  top: 27%;
+  left: 30%;
+  mix-blend-mode: screen;
+  overflow: hidden;
+  z-index: -90;
+}
+
+#floor {
+  position: absolute;
+  top: 27%;
+  left: 30%;
+  mix-blend-mode: luminosity;
+  overflow: hidden;
+  z-index: -90;
+}
+
+#stand-three {
+  position: absolute;
+  top: 27%;
+  left: 30%;
+  mix-blend-mode: screen;
+  overflow: hidden;
+  z-index: -90;
+}
+
+#chorus {
+  position: absolute;
+  top: 5%;
+  left: 7%;
+  overflow: hidden;
+  z-index: -90;
+}
