@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>DrawingFinal</title>
+  <style>
+    body {
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      background-color: #FFC0CB;
+      color: #d4af37;
+    }
+
+    #container {
+      position: relative;
+      width: 1340px;
+      margin: auto;
+      margin-top: 100px;
+    }
+
+    #words {
+      padding-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2em;
+    }
+
+    h4 {
+      display: inline;
+      float: left;
+      font-size: 1.2em;
+    }
+
+    h5 {
+      overflow: hidden;
+      display: inline;
+      float: right;
+      font-size: 0.8em;
+    }
+
+    .gifs {
+      position: absolute;
+    }
+
+    #britney {
+      position: absolute;
+      top: -200px;
+      left: 900px;
+      z-index: -80;
+    }
+
+    #doll {
+      position: absolute;
+      top: 350px;
+      left: 1000px;
+    }
+
+
+    #paris {
+      position: absolute;
+      top: 100px;
+      left: -100px;
+    }
+
+
+    .opaque {
+      opacity: 0.5;
+      transition: opacity 0.5s;
+      z-index: -100;
+
+    }
+
+    .fullOpacity {
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="words">
+      <h1>WEB ART MUSIC VIDEO</h1>
+    </div>
+    <div class="gifs">
+      <img id="britney" src="images/britney.gif" width="334" height="480"></img>
+      <img id="doll" src="images/doll.gif" width="200" height="200"></img>
+      <img id="paris" src="images/paris.gif" width="350" height="350"></img>
+    </div>
+    <div class="covers">
+      <a href="talia/index.html"><img class="opaque" src="images/talia.jpg" width="440" height="440"></a>
+      <a href="4ever/index.html"><img class="opaque" src="images/4ever.jpg" width="440" height="440"></a>
+      <a href="chetto/index.html"><img class="opaque" src="images/chetto.jpg" width="440" height="440"></a>
+
+    </div>
+
+    <h4>Drawing On the Web Final Prject</h4>
+    <h5>Zeyao Li, 2018</h5>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+
+</html>

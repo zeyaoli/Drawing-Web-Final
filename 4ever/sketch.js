@@ -97,4 +97,4 @@ setTimeout(ocean, 36500);
 setTimeout(park, 38500);
 setTimeout(heart, 41000);
 setTimeout(heartTwo, 44500);
-setTimeout(kawaii, 55000);
+setTimeout(kawaii, 58000);
